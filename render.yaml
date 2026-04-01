@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: obscurum
+    env: node
+    buildCommand: apt-get install -y nmap whois dnsutils openssl curl traceroute && npm install
+    startCommand: node server.js
